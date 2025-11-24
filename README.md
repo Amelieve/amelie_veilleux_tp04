@@ -1,5 +1,5 @@
 ## Fonctionalité extra
-Mon idée était d'ajouter des bonus tout au long du jeu donc, j'allais agrandir les niveaux pour pouvoir intégrer des objets un peu partout. Par exemple, si le personnage récolte un objet, celui-ci va plus vite pendant quelques secondes ou une pièce indique la pièce à recolter la plus proche.
+Mon idée était d'ajouter des bonus tout au long du jeu  pour améliorer mon jeu du dernier TP donc, j'allais agrandir les niveaux pour pouvoir intégrer des objets un peu partout. Par exemple, si le personnage récolte un objet, celui-ci va plus vite pendant quelques secondes ou une pièce indique la pièce à recolter la plus proche.
 
 
 ## Plus
