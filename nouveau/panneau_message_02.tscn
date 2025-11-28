@@ -1,46 +1,54 @@
-[gd_scene load_steps=4 format=3 uid="uid://dk7t3262u8i5w"]
+[gd_scene load_steps=4 format=3 uid="uid://cix1jhghq5yek"]
 
-[ext_resource type="Script" uid="uid://bre8ruwbahvro" path="res://media/scripts/panneau.gd" id="1_o8svk"]
-[ext_resource type="Texture2D" uid="uid://f6x6ijbrbgb3" path="res://media/assets/spritesheet-tiles-default.png" id="2_fm38l"]
+[ext_resource type="Script" uid="uid://bre8ruwbahvro" path="res://media/scripts/panneau.gd" id="1_18ujo"]
+[ext_resource type="Texture2D" uid="uid://f6x6ijbrbgb3" path="res://media/assets/spritesheet-tiles-default.png" id="2_ia24r"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0kba"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_18ujo"]
 size = Vector2(60, 55)
 
 [node name="PanneauMessage" type="Area2D"]
-script = ExtResource("1_o8svk")
+script = ExtResource("1_18ujo")
+metadata/_custom_type_script = "uid://bre8ruwbahvro"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(9, 8)
-texture = ExtResource("2_fm38l")
+texture = ExtResource("2_ia24r")
 region_enabled = true
 region_rect = Rect2(641, 640.814, 62, 63.0919)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, 12.5)
-shape = SubResource("RectangleShape2D_r0kba")
+shape = SubResource("RectangleShape2D_18ujo")
 
 [node name="Message" type="Node2D" parent="."]
 
 [node name="Fond" type="ColorRect" parent="Message"]
-offset_left = -74.0
-offset_top = -48.0
-offset_right = 81.0
+offset_left = -108.0
+offset_top = -119.0
+offset_right = 47.0
+offset_bottom = -71.0
+scale = Vector2(1.48524, 2.76)
 color = Color(0.906493, 0.906493, 0.906493, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Etiquette" type="Label" parent="Message/Fond"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.00925923
+anchor_bottom = 1.09259
 offset_left = 1.0
 offset_top = -1.0
 offset_right = 153.0
 offset_bottom = 48.0
+scale = Vector2(1, 0.486665)
 theme_override_colors/font_color = Color(0.4, 0.588235, 1, 1)
-text = "La grenouille te fais
- sauter plus haut !"
+text = "La coccinelle te fais
+aller plus vite !
+Saute et avance en
+même temps .."
 metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_exited" from="." to="." method="_on_body_exited"]

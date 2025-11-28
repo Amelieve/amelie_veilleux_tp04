@@ -1,25 +1,24 @@
-## Montre un message quand le joueur est proche.
-class_name PanneauMessage extends Area2D
-
-@export var message := "Un message défaut."
-
+class_name PanneauMessage
+extends Area2D
 
 func _ready() -> void:
 	$Message.hide()
 
+func _on_body_entered(body: Node2D) -> void:
+	if body is PlayerController:
+		show_message()
 
-func show_message(_body):
-	$Timer.start()
+func _on_body_exited(body: Node2D) -> void:
+	if body is PlayerController:
+		hide_message()
+
+func show_message() -> void:
 	$Message.show()
-	$Message/Fond/Etiquette.text = message
+	$Timer.start()
+
 	await $Timer.timeout
 	$Message.hide()
 
-
-func hide_message(_body) -> void:
+func hide_message() -> void:
 	$Timer.stop()
 	$Message.hide()
-
-
-func _on_body_exited(body: Node2D) -> void:
-	pass # Replace with function body.
