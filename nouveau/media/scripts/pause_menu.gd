@@ -14,10 +14,8 @@ func close_menu():
 	hide()
 	get_tree().paused = false  # Dépause
 
-# -----------------------------
-#   SIGNAL : ResetButton
-# -----------------------------
-func _on_ResetButton_pressed():
+
+func _on_reset_button_pressed() -> void:
 	get_tree().paused = false  # Dépause avant de changer de scène
 
 	var gm = get_tree().get_first_node_in_group("game_manager")
@@ -26,9 +24,7 @@ func _on_ResetButton_pressed():
 
 	get_tree().change_scene_to_file("res://Areas/area_01.tscn")
 
-# -----------------------------
-#   SIGNAL : ContinueButton
-# -----------------------------
-func _on_ContinueButton_pressed():
+
+func _on_continue_button_pressed() -> void:
 	print(">>> CONTINUE OK <<<")
 	close_menu()

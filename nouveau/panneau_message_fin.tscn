@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmhnuh31f64hp"]
+
+[ext_resource type="Script" uid="uid://bre8ruwbahvro" path="res://media/scripts/panneau.gd" id="1_bihl4"]
+[ext_resource type="Texture2D" uid="uid://f6x6ijbrbgb3" path="res://media/assets/spritesheet-tiles-default.png" id="2_6a17m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_18ujo"]
+size = Vector2(60, 55)
+
+[node name="PanneauMessage" type="Area2D"]
+script = ExtResource("1_bihl4")
+metadata/_custom_type_script = "uid://bre8ruwbahvro"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9, 8)
+texture = ExtResource("2_6a17m")
+region_enabled = true
+region_rect = Rect2(641, 640.814, 62, 63.0919)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 12.5)
+shape = SubResource("RectangleShape2D_18ujo")
+
+[node name="Message" type="Node2D" parent="."]
+
+[node name="Fond" type="ColorRect" parent="Message"]
+offset_left = -116.0
+offset_top = -119.0
+offset_right = 39.0
+offset_bottom = -71.0
+scale = Vector2(1.60524, 2.76)
+color = Color(0.906493, 0.906493, 0.906493, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Etiquette" type="Label" parent="Message/Fond"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.00925923
+anchor_bottom = 1.09259
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 153.0
+offset_bottom = 48.0
+scale = Vector2(0.950163, 0.486665)
+theme_override_colors/font_color = Color(0.4, 0.588235, 1, 1)
+text = "Je vois mon vaisseau!
+      En route pour la 
+            maison!
+      Merci humain!"
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

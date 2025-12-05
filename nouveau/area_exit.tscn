@@ -11,7 +11,8 @@ script = ExtResource("1_58kaw")
 sprite = NodePath("Sprite2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-z_index = -10
+visibility_layer = 512
+z_index = 10
 position = Vector2(42.7538, 29.54)
 scale = Vector2(3.92294, 4.04182)
 texture = ExtResource("1_20lp5")
