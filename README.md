@@ -15,7 +15,6 @@ Script globale des mes areas, j'ai utilisé la fonction "Nouvelle scène hérit�
  ┖╴root
     ┠╴Gamemanager
     ┖╴AreaTemplate
-       ┠╴ciel2
        ┠╴ciel
        ┠╴area_exit
        ┃  ┠╴Sprite2D
@@ -25,7 +24,7 @@ Script globale des mes areas, j'ai utilisé la fonction "Nouvelle scène hérit�
        ┃  ┖╴ground
        ┠╴buisson_01
        ┠╴buisson_02
-       ┠╴Area2D
+       ┠╴worm
        ┃  ┠╴Sprite2D
        ┃  ┠╴CollisionShape2D
        ┃  ┠╴AnimationPlayer
@@ -58,17 +57,18 @@ Script globale des mes areas, j'ai utilisé la fonction "Nouvelle scène hérit�
        ┃     ┠╴CollisionShape2D
        ┃     ┖╴CoinSound
        ┠╴AudioStreamPlayer
-       ┠╴CanvasLayer
+       ┠╴menu_ingame
        ┃  ┠╴Button4
        ┃  ┖╴VBoxContainer
        ┃     ┠╴Button
        ┃     ┠╴Button2
        ┃     ┖╴Button3
-       ┖╴CanvasLayer2
+       ┖╴HUD
           ┠╴ColorRect
           ┖╴HBoxContainer
              ┠╴CoinsIcon
              ┖╴CoinsLabel
+
 ```
 
 ## Vu globale des areas:
