@@ -9,28 +9,67 @@ Comme mentionné plus haut, je vais agrandir les maps en ajountant des trucs plu
 # Résultat final
 
 ## Arborescence
-res
-|
 
-|---areas
-
-|      |---area_01.tscn, area_02.tscn, area_03.tscn, area_04.tscn, main_menu.tscn, menu_control.tscn, menu_fin.tscn
-
-|---media
-
-|      |--assets
-
-|      |      |---images
-
-|      |---son
-
-|      |      |---sons
-
-|      |---script
-
-|      |      |---scripts.gd
-
-|---Autre scènes
+Script globale des mes area, j'ai utilisé la fonction "Nouvelle scène héritée" pour faire mes scènes Area alors mon script reste le même pour la plupart avec quelques additions dépendant des niveaux.
+```
+ ┖╴root
+    ┠╴Gamemanager
+    ┖╴AreaTemplate
+       ┠╴ciel2
+       ┠╴ciel
+       ┠╴area_exit
+       ┃  ┠╴Sprite2D
+       ┃  ┖╴CollisionShape2D
+       ┠╴TileMap
+       ┃  ┠╴one_way_ground
+       ┃  ┖╴ground
+       ┠╴buisson_01
+       ┠╴buisson_02
+       ┠╴Area2D
+       ┃  ┠╴Sprite2D
+       ┃  ┠╴CollisionShape2D
+       ┃  ┠╴AnimationPlayer
+       ┃  ┖╴Label
+       ┠╴player
+       ┃  ┠╴Camera2D
+       ┃  ┠╴playeranimateur
+       ┃  ┃  ┠╴AnimationPlayer
+       ┃  ┃  ┖╴Sprite2D
+       ┃  ┖╴CollisionShape2D
+       ┠╴Coins
+       ┃  ┠╴Coin
+       ┃  ┃  ┠╴Label
+       ┃  ┃  ┠╴Sprite2D
+       ┃  ┃  ┠╴CollisionShape2D
+       ┃  ┃  ┖╴CoinSound
+       ┃  ┠╴Coin2
+       ┃  ┃  ┠╴Label
+       ┃  ┃  ┠╴Sprite2D
+       ┃  ┃  ┠╴CollisionShape2D
+       ┃  ┃  ┖╴CoinSound
+       ┃  ┠╴Coin3
+       ┃  ┃  ┠╴Label
+       ┃  ┃  ┠╴Sprite2D
+       ┃  ┃  ┠╴CollisionShape2D
+       ┃  ┃  ┖╴CoinSound
+       ┃  ┖╴Coin4
+       ┃     ┠╴Label
+       ┃     ┠╴Sprite2D
+       ┃     ┠╴CollisionShape2D
+       ┃     ┖╴CoinSound
+       ┠╴AudioStreamPlayer
+       ┠╴CanvasLayer
+       ┃  ┠╴Button4
+       ┃  ┖╴VBoxContainer
+       ┃     ┠╴Button
+       ┃     ┠╴Button2
+       ┃     ┖╴Button3
+       ┖╴CanvasLayer2
+          ┠╴ColorRect
+          ┖╴HBoxContainer
+             ┠╴CoinsIcon
+             ┖╴CoinsLabel
+```
 
 ## Crédits
 Images -
