@@ -129,6 +129,7 @@ volume_db = -1.79
 autoplay = true
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 offset_left = 289.0
 offset_top = 262.0
 offset_right = 889.0
