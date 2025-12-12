@@ -72,7 +72,7 @@ Script globale des mes areas, j'ai utilisé la fonction "Nouvelle scène hérit�
 ```
 
 ## Vu globale des areas:
-![Alt text](scene_01.png)
+![Scène 01](scene_01.png)
 
 ## Crédits
 Images -
