@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://t416gjxtw7j2"]
+[gd_scene load_steps=5 format=3 uid="uid://t416gjxtw7j2"]
 
 [ext_resource type="PackedScene" uid="uid://cd62qni4x7abq" path="res://Areas/area_01.tscn" id="1_yyccm"]
 [ext_resource type="PackedScene" uid="uid://dk7t3262u8i5w" path="res://panneau.tscn" id="2_5ewt7"]
 [ext_resource type="PackedScene" uid="uid://dafi4f7oy3jbr" path="res://piece_saut.tscn" id="2_ktyps"]
+[ext_resource type="PackedScene" uid="uid://bay8y3e5jd385" path="res://menu_ingame.tscn" id="4_ekjmo"]
 
 [node name="AreaTemplate" instance=ExtResource("1_yyccm")]
 
@@ -58,3 +59,5 @@ scale = Vector2(0.123635, 0.119199)
 [node name="PanneauMessage" parent="." index="13" instance=ExtResource("2_5ewt7")]
 position = Vector2(931, 19)
 scale = Vector2(0.35994, 0.345567)
+
+[node name="CanvasLayer3" parent="." index="15" instance=ExtResource("4_ekjmo")]

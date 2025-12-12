@@ -1,5 +1,5 @@
 extends Button
 
 func _pressed():
-	var menu = get_parent().get_node("PauseMenu")
+	var menu = get_parent()  # CanvasLayer
 	menu.open_menu()

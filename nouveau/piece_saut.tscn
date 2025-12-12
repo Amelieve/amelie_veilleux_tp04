@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dafi4f7oy3jbr"]
+[gd_scene load_steps=5 format=3 uid="uid://dafi4f7oy3jbr"]
 
 [ext_resource type="Texture2D" uid="uid://dbme4b0f6a4k4" path="res://media/assets/spritesheet-enemies-default.png" id="1_5dva8"]
 [ext_resource type="Script" uid="uid://t42f2smyirvy" path="res://media/scripts/piece_saut.gd" id="1_jean0"]
+[ext_resource type="AudioStream" uid="uid://ddggykqye66l1" path="res://media/son/jump.mp3" id="3_cfbns"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jean0"]
 size = Vector2(64, 49)
@@ -19,6 +20,7 @@ region_rect = Rect2(320, 69.361, 66, 59.349)
 position = Vector2(32, 26.5)
 shape = SubResource("RectangleShape2D_jean0")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="SoundPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_cfbns")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
