@@ -71,6 +71,9 @@ Script globale des mes areas, j'ai utilisé la fonction "Nouvelle scène hérit�
              ┖╴CoinsLabel
 ```
 
+## Vu globale des areas:
+![Alt text](scene_01.png)
+
 ## Crédits
 Images -
 
