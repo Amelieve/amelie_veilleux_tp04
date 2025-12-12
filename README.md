@@ -10,7 +10,7 @@ Comme mentionné plus haut, je vais agrandir les maps en ajountant des trucs plu
 
 ## Arborescence
 
-Script globale des mes area, j'ai utilisé la fonction "Nouvelle scène héritée" pour faire mes scènes Area alors mon script reste le même pour la plupart avec quelques additions dépendant des niveaux.
+Script globale des mes areas, j'ai utilisé la fonction "Nouvelle scène héritée" pour faire mes scènes Area alors mon script reste le même pour la plupart avec quelques additions dépendant des niveaux.
 ```
  ┖╴root
     ┠╴Gamemanager
