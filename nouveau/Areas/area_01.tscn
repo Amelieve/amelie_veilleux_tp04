@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://cd62qni4x7abq"]
+[gd_scene load_steps=14 format=3 uid="uid://cd62qni4x7abq"]
 
+[ext_resource type="Script" uid="uid://cx4skhrnm8dkb" path="res://media/area_01.gd" id="1_a4har"]
 [ext_resource type="Texture2D" uid="uid://b6ovwhn1r6p0k" path="res://media/assets/tiles_1.png" id="1_bb12l"]
 [ext_resource type="Texture2D" uid="uid://vj8oyenhniy8" path="res://media/assets/spritesheet-backgrounds-default.png" id="1_fy505"]
 [ext_resource type="PackedScene" uid="uid://dwa4kkfbtj8ht" path="res://media/player.tscn" id="2_qpjuv"]
@@ -333,6 +334,7 @@ sources/0 = SubResource("TileSetAtlasSource_k4ko3")
 
 [node name="AreaTemplate" type="Node2D"]
 position = Vector2(-407, -60)
+script = ExtResource("1_a4har")
 
 [node name="ciel2" type="ColorRect" parent="."]
 offset_left = -207.0
@@ -406,5 +408,7 @@ volume_db = 0.405
 autoplay = true
 
 [node name="CanvasLayer" parent="." instance=ExtResource("8_76lbm")]
+visible = false
 
 [node name="CanvasLayer2" parent="." instance=ExtResource("10_5anur")]
+visible = false

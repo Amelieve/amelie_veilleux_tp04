@@ -71,9 +71,15 @@ position = Vector2(1291, -135)
 [node name="Path2D" parent="." index="11" instance=ExtResource("3_s2v6k")]
 position = Vector2(1066, -60)
 
+[node name="CanvasLayer" parent="." index="12"]
+visible = false
+
 [node name="piece_vitesse" parent="." index="13" instance=ExtResource("4_p7s8p")]
 position = Vector2(1453, -133)
 scale = Vector2(0.214673, 0.199998)
 
 [node name="PanneauMessage" parent="piece_vitesse" index="3" instance=ExtResource("6_5o15y")]
 position = Vector2(-288.811, -15.0002)
+
+[node name="CanvasLayer2" parent="." index="14"]
+visible = false
