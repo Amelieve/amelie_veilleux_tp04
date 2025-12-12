@@ -47,6 +47,12 @@ curve = SubResource("Curve2D_2fckr")
 [node name="MovingplatformSideway" parent="TileMap" index="3" instance=ExtResource("3_vc6if")]
 position = Vector2(1340, -125)
 
+[node name="buisson_01" parent="." index="5"]
+position = Vector2(1022, -72)
+
+[node name="buisson_02" parent="." index="6"]
+position = Vector2(1664, -135)
+
 [node name="player" parent="." index="8"]
 position = Vector2(857, 16)
 
@@ -57,7 +63,7 @@ position = Vector2(934, -85)
 position = Vector2(1184, -70)
 
 [node name="Coin3" parent="Coins" index="2"]
-position = Vector2(1644, -134)
+position = Vector2(1616, -134)
 
 [node name="Coin4" parent="Coins" index="3"]
 position = Vector2(1291, -135)

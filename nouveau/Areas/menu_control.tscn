@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://bpg747rprhuav"]
+
+[ext_resource type="Texture2D" uid="uid://b3ya4xxdsgixb" path="res://media/assets/image_debut.png" id="1_7q548"]
+[ext_resource type="Script" uid="uid://c0uu7c3ou4e34" path="res://media/scripts/menu_control.gd" id="1_mdbc7"]
+[ext_resource type="AudioStream" uid="uid://cyxkyo0ovl1s3" path="res://media/son/menu.mp3" id="2_mdbc7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lwosu"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nfhyp"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_chs0y"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2l1rg"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="menu_control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_mdbc7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(578, 325)
+scale = Vector2(0.953317, 1.02355)
+texture = ExtResource("1_7q548")
+region_enabled = true
+region_rect = Rect2(347.337, 418.346, 1208.62, 768.614)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 381.0
+offset_top = 438.0
+offset_right = 706.0
+offset_bottom = 611.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.617316, 0.743347, 1, 1)
+theme_override_colors/font_color = Color(0.398642, 0.587427, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.283037, 0.50621, 0.999982, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_lwosu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nfhyp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_chs0y")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2l1rg")
+text = "Retourner au menu"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_mdbc7")
+volume_db = -1.79
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 257.0
+offset_top = 297.0
+offset_right = 857.0
+offset_bottom = 462.0
+theme_override_font_sizes/font_size = 25
+text = "Contrôle pour bouger: 
+A : Bouger vers la gauche
+D : Bouger vers la droite
+W: Sauter"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

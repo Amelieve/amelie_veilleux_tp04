@@ -1,80 +1,78 @@
-[gd_scene load_steps=12 format=3 uid="uid://cf5b0nnqldmkd"]
+[gd_scene load_steps=12 format=3 uid="uid://c400gdivm2ewg"]
 
-[ext_resource type="Script" uid="uid://ia07yap7fgux" path="res://media/scripts/main_menu.gd" id="1_d88vq"]
-[ext_resource type="Texture2D" uid="uid://b3ya4xxdsgixb" path="res://media/assets/image_debut.png" id="2_d88vq"]
-[ext_resource type="AudioStream" uid="uid://cyxkyo0ovl1s3" path="res://media/son/menu.mp3" id="3_wwjr6"]
+[ext_resource type="Script" uid="uid://d36ogw2du7m7u" path="res://media/scripts/menu_fin.gd" id="1_y3p7p"]
+[ext_resource type="Texture2D" uid="uid://cyl4xmscodti1" path="res://media/assets/image_fin.png" id="2_uiu52"]
+[ext_resource type="AudioStream" uid="uid://cyxkyo0ovl1s3" path="res://media/son/menu.mp3" id="2_y3p7p"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eyqkh"]
 bg_color = Color(1, 1, 1, 1)
 border_width_left = 16
 border_width_top = 16
 border_width_right = 16
 border_width_bottom = 16
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8f4c1"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glbon"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_063if"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6t1ki"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlkkf"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wvl16"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qe12f"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xkax3"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qtwp"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3t4ky"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dy7ct"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_snsik"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[node name="MainMenu" type="Control"]
+[node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_d88vq")
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_y3p7p")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(578, 325)
+position = Vector2(566, 294)
 scale = Vector2(0.953317, 1.02355)
-texture = ExtResource("2_d88vq")
+texture = ExtResource("2_uiu52")
 region_enabled = true
-region_rect = Rect2(347.337, 418.346, 1208.62, 768.614)
+region_rect = Rect2(9.20685, 13.0691, 1891.33, 1417.48)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -83,10 +81,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -162.5
-offset_top = 97.5
-offset_right = 162.5
-offset_bottom = 270.5
+offset_left = 412.0
+offset_top = 404.0
+offset_right = 737.0
+offset_bottom = 577.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 15
@@ -97,11 +95,11 @@ theme_override_colors/font_hover_color = Color(0.617316, 0.743347, 1, 1)
 theme_override_colors/font_color = Color(0.398642, 0.587427, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.283037, 0.50621, 0.999982, 1)
 theme_override_font_sizes/font_size = 25
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_fu7sn")
-theme_override_styles/hover = SubResource("StyleBoxFlat_jix8l")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_glbon")
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-text = "Commencer"
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_eyqkh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8f4c1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_063if")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6t1ki")
+text = "Recommencer"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -109,9 +107,9 @@ theme_override_colors/font_hover_color = Color(0.615686, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.4, 0.588235, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.282353, 0.505882, 1, 1)
 theme_override_font_sizes/font_size = 25
-theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wvl16")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xkax3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6t1ki")
 text = "Options"
 
 [node name="Button3" type="Button" parent="VBoxContainer"]
@@ -120,29 +118,27 @@ theme_override_colors/font_hover_color = Color(0.615686, 0.745098, 1, 1)
 theme_override_colors/font_color = Color(0.4, 0.588235, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.282353, 0.505882, 1, 1)
 theme_override_font_sizes/font_size = 25
-theme_override_styles/hover = SubResource("StyleBoxFlat_8qtwp")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_dy7ct")
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3t4ky")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_snsik")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6t1ki")
 text = "Quitter"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_wwjr6")
+stream = ExtResource("2_y3p7p")
 volume_db = -1.79
 autoplay = true
 
 [node name="Label" type="Label" parent="."]
-layout_mode = 0
 offset_left = 289.0
 offset_top = 262.0
 offset_right = 889.0
 offset_bottom = 427.0
 theme_override_font_sizes/font_size = 25
-text = "Aide ce petit alien à retourner chez lui!
- Ton objectif est de trouver quatre pièces
- par niveau pour te rapprocher de son vaisseau. 
-Bonne chance à toi !!"
+text = "Bravo ! Le petit alien a 
+réussi à retourner chez lui grâce à toi !
+Tu peux être fière !!"
 horizontal_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

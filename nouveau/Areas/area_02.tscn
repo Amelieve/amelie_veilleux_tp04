@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://t416gjxtw7j2"]
+[gd_scene load_steps=6 format=3 uid="uid://t416gjxtw7j2"]
 
 [ext_resource type="PackedScene" uid="uid://cd62qni4x7abq" path="res://Areas/area_01.tscn" id="1_yyccm"]
 [ext_resource type="PackedScene" uid="uid://dk7t3262u8i5w" path="res://panneau.tscn" id="2_5ewt7"]
 [ext_resource type="PackedScene" uid="uid://dafi4f7oy3jbr" path="res://piece_saut.tscn" id="2_ktyps"]
 [ext_resource type="PackedScene" uid="uid://bay8y3e5jd385" path="res://menu_ingame.tscn" id="4_ekjmo"]
+[ext_resource type="Texture2D" uid="uid://f6x6ijbrbgb3" path="res://media/assets/spritesheet-tiles-default.png" id="5_n6le3"]
 
 [node name="AreaTemplate" instance=ExtResource("1_yyccm")]
 
@@ -61,3 +62,10 @@ position = Vector2(931, 19)
 scale = Vector2(0.35994, 0.345567)
 
 [node name="CanvasLayer3" parent="." index="15" instance=ExtResource("4_ekjmo")]
+
+[node name="buisson_03" type="Sprite2D" parent="." index="16"]
+position = Vector2(860, 6)
+scale = Vector2(0.386465, 0.413615)
+texture = ExtResource("5_n6le3")
+region_enabled = true
+region_rect = Rect2(961.271, 844.226, 62.131, 51.4788)

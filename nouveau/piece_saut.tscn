@@ -20,7 +20,7 @@ region_rect = Rect2(320, 69.361, 66, 59.349)
 position = Vector2(32, 26.5)
 shape = SubResource("RectangleShape2D_jean0")
 
-[node name="SoundPlayer" type="AudioStreamPlayer2D" parent="."]
+[node name="sound_player" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_cfbns")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
