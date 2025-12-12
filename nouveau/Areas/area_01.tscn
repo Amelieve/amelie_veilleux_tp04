@@ -1,8 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://cd62qni4x7abq"]
+[gd_scene load_steps=13 format=3 uid="uid://cd62qni4x7abq"]
 
 [ext_resource type="Script" uid="uid://cx4skhrnm8dkb" path="res://media/area_01.gd" id="1_a4har"]
 [ext_resource type="Texture2D" uid="uid://b6ovwhn1r6p0k" path="res://media/assets/tiles_1.png" id="1_bb12l"]
-[ext_resource type="Texture2D" uid="uid://vj8oyenhniy8" path="res://media/assets/spritesheet-backgrounds-default.png" id="1_fy505"]
 [ext_resource type="PackedScene" uid="uid://dwa4kkfbtj8ht" path="res://media/player.tscn" id="2_qpjuv"]
 [ext_resource type="Texture2D" uid="uid://f6x6ijbrbgb3" path="res://media/assets/spritesheet-tiles-default.png" id="4_ak2r3"]
 [ext_resource type="PackedScene" uid="uid://b52wnbfoy8eku" path="res://worm.tscn" id="7_ilba2"]
@@ -336,20 +335,12 @@ sources/0 = SubResource("TileSetAtlasSource_k4ko3")
 position = Vector2(-407, -60)
 script = ExtResource("1_a4har")
 
-[node name="ciel2" type="ColorRect" parent="."]
+[node name="ciel" type="ColorRect" parent="."]
 offset_left = -207.0
 offset_top = -404.0
 offset_right = 811.0
 offset_bottom = 304.0
 color = Color(0.854902, 0.964706, 0.976471, 1)
-
-[node name="ciel" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(288, -162)
-scale = Vector2(3.92857, 2.63546)
-texture = ExtResource("1_fy505")
-region_enabled = true
-region_rect = Rect2(515, 273.66, 252, 221.43)
 
 [node name="area_exit" parent="." instance=ExtResource("9_76lbm")]
 position = Vector2(530, -65)
@@ -377,7 +368,7 @@ texture = ExtResource("4_ak2r3")
 region_enabled = true
 region_rect = Rect2(961.271, 844.226, 62.131, 51.4788)
 
-[node name="Area2D" parent="." instance=ExtResource("7_ilba2")]
+[node name="worm" parent="." instance=ExtResource("7_ilba2")]
 position = Vector2(336, -2)
 scale = Vector2(0.202848, 0.212709)
 
@@ -407,8 +398,6 @@ stream = ExtResource("8_pax0r")
 volume_db = 0.405
 autoplay = true
 
-[node name="CanvasLayer" parent="." instance=ExtResource("8_76lbm")]
-visible = false
+[node name="menu_ingame" parent="." instance=ExtResource("8_76lbm")]
 
-[node name="CanvasLayer2" parent="." instance=ExtResource("10_5anur")]
-visible = false
+[node name="HUD" parent="." instance=ExtResource("10_5anur")]
