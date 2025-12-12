@@ -11,6 +11,16 @@ Comme mentionné plus haut, je vais agrandir les maps en ajountant des trucs plu
 ## Arborescence
 
 ## Crédits
-Image: Pixabay & Kenney.nl
+Images -
 
-Son: Pixabay
+Interface : Kenney.nl
+
+Fond : Pixabay
+
+Sons -
+
+Effets sonore : Pixabay
+
+Musique de fond : Pixabay
+
+
