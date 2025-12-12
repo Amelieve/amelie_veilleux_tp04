@@ -9,7 +9,18 @@ Comme mentionné plus haut, je vais agrandir les maps en ajountant des trucs plu
 # Résultat final
 
 ## Arborescence
-
+res
+|
+|---areas
+|      |---area_01.tscn, area_02.tscn, area_03.tscn, area_04.tscn, main_menu.tscn, menu_control.tscn, menu_fin.tscn
+|---media
+|      |--assets
+|      |      |---images
+|      |---son
+|      |      |---sons
+|      |---script
+|      |      |---scripts.gd
+|---Autre scènes
 ## Crédits
 Images -
 
