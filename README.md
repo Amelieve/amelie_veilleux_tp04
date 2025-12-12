@@ -73,9 +73,13 @@ Script globale des mes areas, j'ai utilisé la fonction "Nouvelle scène hérit�
 
 ## Vu globale des areas:
 ![Scène 01](scene_01.png)
+area_01
 ![Scène 01](scene_02.png)
+area_02
 ![Scène 01](scene_03.png)
+area_03
 ![Scène 01](scene_04.png)
+area_04
 ## Crédits
 Images -
 
