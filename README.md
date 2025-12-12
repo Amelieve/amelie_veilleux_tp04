@@ -10,7 +10,87 @@ Comme mentionné plus haut, je vais agrandir les maps en ajountant des trucs plu
 
 ## Arborescence
 
-## Crédits
-Image: Pixabay & Kenney.nl
+Script globale des mes areas, j'ai utilisé la fonction "Nouvelle scène héritée" pour faire mes scènes Area alors mon script reste le même pour la plupart avec quelques additions dépendant des niveaux.
+```
+ ┖╴root
+    ┠╴Gamemanager
+    ┖╴AreaTemplate
+       ┠╴ciel2
+       ┠╴ciel
+       ┠╴area_exit
+       ┃  ┠╴Sprite2D
+       ┃  ┖╴CollisionShape2D
+       ┠╴TileMap
+       ┃  ┠╴one_way_ground
+       ┃  ┖╴ground
+       ┠╴buisson_01
+       ┠╴buisson_02
+       ┠╴Area2D
+       ┃  ┠╴Sprite2D
+       ┃  ┠╴CollisionShape2D
+       ┃  ┠╴AnimationPlayer
+       ┃  ┖╴Label
+       ┠╴player
+       ┃  ┠╴Camera2D
+       ┃  ┠╴playeranimateur
+       ┃  ┃  ┠╴AnimationPlayer
+       ┃  ┃  ┖╴Sprite2D
+       ┃  ┖╴CollisionShape2D
+       ┠╴Coins
+       ┃  ┠╴Coin
+       ┃  ┃  ┠╴Label
+       ┃  ┃  ┠╴Sprite2D
+       ┃  ┃  ┠╴CollisionShape2D
+       ┃  ┃  ┖╴CoinSound
+       ┃  ┠╴Coin2
+       ┃  ┃  ┠╴Label
+       ┃  ┃  ┠╴Sprite2D
+       ┃  ┃  ┠╴CollisionShape2D
+       ┃  ┃  ┖╴CoinSound
+       ┃  ┠╴Coin3
+       ┃  ┃  ┠╴Label
+       ┃  ┃  ┠╴Sprite2D
+       ┃  ┃  ┠╴CollisionShape2D
+       ┃  ┃  ┖╴CoinSound
+       ┃  ┖╴Coin4
+       ┃     ┠╴Label
+       ┃     ┠╴Sprite2D
+       ┃     ┠╴CollisionShape2D
+       ┃     ┖╴CoinSound
+       ┠╴AudioStreamPlayer
+       ┠╴CanvasLayer
+       ┃  ┠╴Button4
+       ┃  ┖╴VBoxContainer
+       ┃     ┠╴Button
+       ┃     ┠╴Button2
+       ┃     ┖╴Button3
+       ┖╴CanvasLayer2
+          ┠╴ColorRect
+          ┖╴HBoxContainer
+             ┠╴CoinsIcon
+             ┖╴CoinsLabel
+```
 
-Son: Pixabay
+## Vu globale des areas:
+![Scène 01](scene_01.png)
+Image de l'area_01
+![Scène 01](scene_02.png)
+Image de l'area_02
+![Scène 01](scene_03.png)
+Image de l'area_03
+![Scène 01](scene_04.png)
+Image de l'area_04
+## Crédits
+Images -
+
+Interface : Kenney.nl
+
+Fond : Pixabay
+
+Sons -
+
+Effets sonore : Pixabay
+
+Musique de fond : Pixabay
+
+
