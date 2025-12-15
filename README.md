@@ -8,6 +8,19 @@ Comme mentionné plus haut, je vais agrandir les maps en ajountant des trucs plu
 
 # Résultat final
 
+## Description
+Ce jeu est un multilevel game composé de trois niveaux. Dans chacun d’eux, le joueur doit récolter des pièces afin d’ouvrir un portail situé à la fin du parcours. La difficulté augmente progressivement à chaque changement de niveau, et des animaux interactifs sont mis à la disposition du joueur pour l’aider dans sa progression.
+
+## Instructions
+
+Pour bouger  - 
+
+A : Avance à gauche
+
+D : Avance à droite
+
+W : Saute
+
 ## Arborescence
 
 Script globale des mes areas, j'ai utilisé la fonction "Nouvelle scène héritée" pour faire mes scènes Area alors mon script reste le même pour la plupart avec quelques additions dépendant des niveaux.
